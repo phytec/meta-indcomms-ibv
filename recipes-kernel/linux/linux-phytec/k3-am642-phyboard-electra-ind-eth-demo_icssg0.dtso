@@ -1,0 +1,28 @@
+// SPDX-License-Identifier: GPL-2.0-only OR MIT
+/*
+ * Copyright (C) 2025 IBV - Echtzeit- und Embedded GmbH & Co. KG
+ */
+
+/dts-v1/;
+/plugin/;
+
+/ {
+	compatible = "phytec,am642-phyboard-electra-rdk";
+};
+
+/* disable ICSSG0 */
+&icssg0_emac0 {
+	status = "disabled";
+};
+
+&icssg0_emac1 {
+	status = "disabled";
+};
+
+&icssg0_mdio {
+	status = "disabled";
+};
+
+&icssg0 {
+	status = "disabled";
+};
