@@ -9,11 +9,11 @@ INSTALL_FW_DIR = "${nonarch_base_libdir}/firmware/ibv-indcomms"
 SRC_URI = " \
     https://download.phytec.de/Software/Linux/BSP-Yocto-AM64x/resources/${BPN}-${PV}.tar.gz;subdir=${BPN} \
 "
-SRC_URI[sha256sum] = "a341a7a841d3d336034cfccc414bf7315eb5b6507bee47079b0916b54619a890"
+SRC_URI[sha256sum] = "3e96b787838cc7b7216f84f0cb3b57521a8cfbf756da93385aa0f5cda66e9528"
 
 S = "${WORKDIR}/${BPN}"
 
-PV = "1.1"
+PV = "1.2"
 
 do_install() {
     install -d ${D}${INSTALL_FW_DIR}
