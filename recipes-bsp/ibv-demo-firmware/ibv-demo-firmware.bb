@@ -11,6 +11,9 @@ SRC_URI = " \
 "
 SRC_URI[sha256sum] = "3e96b787838cc7b7216f84f0cb3b57521a8cfbf756da93385aa0f5cda66e9528"
 
+RCONFLICTS:${PN} = "mcu-plus-sdk-firmware"
+RREPLACES:${PN} = "mcu-plus-sdk-firmware"
+
 S = "${WORKDIR}/${BPN}"
 
 PV = "1.2"
