@@ -7,12 +7,12 @@ SRC_URI = " \
 	https://download.phytec.de/Software/Linux/BSP-Yocto-AM64x/resources/ibv_ind_comms_common-${PV}.tar.gz;name=ibv_ind_comms_common;subdir=ti_ind_comms_sdk_am64x \
 "
 
-SRC_URI[linux_ind_comms_demo.sha256sum] = "c243939836078a8247437af4e143c9e6d3794a580c01240b940f63ca1dc3fd1d"
-SRC_URI[ibv_ind_comms_common.sha256sum] = "d46d8044af205c8c7b3d2f73578a9c75c30bb9d11c0652c88c1b58b8a0752903"
+SRC_URI[linux_ind_comms_demo.sha256sum] = "e0fa38082c88ce786b2ffce03afda03c117d5ae5d6f79a8bd082219acfe6c5ea"
+SRC_URI[ibv_ind_comms_common.sha256sum] = "3ab8502b7b951b6c2943c688c0fca32ad276cc9c6b0a116dab385f6632d33e55"
 
 S = "${WORKDIR}/linux_ind_comms_demo"
 
-PV = "1.1"
+PV = "1.2"
 
 DEPENDS = "ti-rpmsg-char"
 RDEPENDS:${PN} = "bash"
